@@ -248,7 +248,7 @@ namespace ProcessSceduler
 
         private void abtBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Made by:\nKarim Salah Sadek\nKirolos Samuel Azmy\nMahmoud Ahmed\nHassan M. Muhammed\n\nDescription:\nThis project was created for 3rd CSE OS course in ASU FOE.t shows how different scheduling techniques work on a gannt chart and a stacked bar chart.", "Process Scheduler March 2020!");
+            MessageBox.Show("Made by:\nKarim Salah Sadek\nKirolos Samuel Azmy\n\nDescription:\nThis project was created for 3rd CSE OS course in ASU FOE.t shows how different scheduling techniques work on a gannt chart and a stacked bar chart.", "Process Scheduler March 2020!");
         }
 
         Dictionary<string, string> exDict = new Dictionary<string, string>();
