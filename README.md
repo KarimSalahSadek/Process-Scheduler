@@ -1,44 +1,28 @@
-# Memory_Allocation_Simulator
-### It is an Windows based desktop application that is used to simulate different Operating System memory allocation algorithms.
-### In Operating Systems, Segmentation is a memory management technique in which, the memory is divided into the variable size parts. Each part is known as segment which can be allocated to a process. The details about each segment are stored in a table called as segment table.
+# Process-Scheduler
+### It is an Windows based desktop application that is used to simulate different Operating System process scheduleing algorithms.
+### It supports 4 different Scheduling Algorithms which are :
+* First Come First Served (FCFS).
+* Shortest Job First (SJF) , Support both pre-emptive and non pre-emptive.
+* Priority Based Scheduler , Support both pre-emptive and non pre-emptive.
+* Round Robin (RR).
 
-### It supports 2 different Scheduling Algorithms which are :
-* First Fit .
-* Best Fit.
+#### The Application supports any kind of input like float input of arrival time or burst time of the processes 
+#### It also can deal with the time gap between the arrival or burst time of the processes.
 
-#### The Application supports any kind of input like float input of Start of the hole or it size , or size of the segmentation of the process.
-
-#### In order to take a look on the application , You should download a Zip file of the repo and then open the .exe file.
-
+#### In order to take a look on the application , You should download a Zip file of the repo and then open the Release folder where you will find the .exe file.
 
 #### Here is a tutorial to open and use the application in a proper way : 
 
-![1](https://user-images.githubusercontent.com/66043730/85202665-4e1f3600-b308-11ea-8950-81f2fc8bef27.png)
-###### GUI 
-
-![2](https://user-images.githubusercontent.com/66043730/85202673-58413480-b308-11ea-86bd-a23a12d732c2.png)
-
-1. First you should enter the maximum memory size and then enter the holes properties (Size and Start in the memory) , If the total size of the holes is larger than the size of the memory , A message will shown up to the user to inform him to enter the new holes.
-
-![3](https://user-images.githubusercontent.com/66043730/85202682-67c07d80-b308-11ea-8ced-3ff1d1f4b3ca.png)
-
-2. After entering the proper values of the holes properties , a table of memeory in the left of the application will show up and also a segmentation table in the right.
-
-3. You will have the choice to deallocate an initially allocated segment before entering any process. These screenshots below further illustrates the example.
-![Deallocate](https://user-images.githubusercontent.com/66043730/85202686-7149e580-b308-11ea-8044-9f7ca8c345f8.png)
-###### Deallocate Initially Allocated Segment Example.
-![Deallocate2](https://user-images.githubusercontent.com/66043730/85202691-79a22080-b308-11ea-9c69-1a6418cded6e.png)
-###### Deallocate Initially Allocated Segment Example Output.
-
-4. Then, You will hava a choice to choose which Memory allocation algorithm to apply on the processes you will enter later.
-5. If the incoming process can't be allocated , A message will show up to user to inform him to enter another proper process.
-
-![2](https://user-images.githubusercontent.com/66043730/85202673-58413480-b308-11ea-86bd-a23a12d732c2.png)
-###### Adding Process by using First Fit Memory Allocation Algorithm.
-![3](https://user-images.githubusercontent.com/66043730/85202682-67c07d80-b308-11ea-8ced-3ff1d1f4b3ca.png)
-###### The output.
-
-
+![FCFS GAP](https://user-images.githubusercontent.com/66043730/85196895-aab92b80-b2dd-11ea-86d7-f891575d3fe1.PNG)
+1. First you will choose the type of the scheduler (If it is pre-emptive based only like Round Robin the non-pre-emptive check box will not be available to be used).
+2. After that choose if it is pre-emptive or not if the scheduler supports both.
+3. Then , Add process by typing their Arrival time and their burst time (the application supports input error handling), and also the priority of each process if the user chooses the priority based scheduler (You will not be able to go further if you choose priority scheduler and dont add the priority of each process).
+4. In every scheduler , There are pre-loaded examples that supports both fractional inputs or gap .
+5. In order to simulate the processes , You should click in (Commence Scheduling Procedure).
+6. The Output should be visualize in 2 charts , The below one is by Bar Chart.
+![FCFS GAP SOL2](https://user-images.githubusercontent.com/66043730/85196892-a987fe80-b2dd-11ea-858b-5a7ea4dca6e1.PNG)
+7. And this by Gantt Chart.
+![FCFS GAP SOL](https://user-images.githubusercontent.com/66043730/85196889-a856d180-b2dd-11ea-82e5-972e1cf93a43.PNG)
 
 
 # Notes:
